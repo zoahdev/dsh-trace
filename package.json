@@ -1,0 +1,17 @@
+{
+  "name": "dsh-trace",
+  "version": "0.1.0",
+  "description": "Aggregate observability dashboard for DeepSeek Harness sessions: decode every session.jsonl.zstd and render tokens/tools/errors/latency as one HTML report.",
+  "type": "module",
+  "bin": {
+    "dsh-trace": "bin/trace.mjs"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "test": "node --test test/trace.test.mjs"
+  },
+  "keywords": ["deepseek-harness", "dsh", "observability", "tracing", "agent", "dashboard"],
+  "license": "MIT"
+}
