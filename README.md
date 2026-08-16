@@ -1,12 +1,8 @@
 # dsh-trace — aggregate observability dashboard for DeepSeek Harness
 
-[![npm](https://img.shields.io/npm/v/@zoah/dsh-trace)](https://www.npmjs.com/package/@zoah/dsh-trace)
-
 Decode **every** `session.jsonl.zstd` under a sessions root and render one self-contained HTML dashboard: total sessions, estimated input/output tokens, tool-call counts, error rate, top tools, and a per-session table. Zero dependencies (Node ≥ 22.19 for bundled zstd).
 
 ```sh
-npx @zoah/dsh-trace [sessions-root] --out trace.html
-# or from source
 node bin/trace.mjs [sessions-root] --out trace.html
 # default root: ~/.dsh/sessions
 ```
